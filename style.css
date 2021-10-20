@@ -76,6 +76,7 @@
     border: 1px black solid;
     padding: 5vmin;
     background: rgb(249, 249, 249);
+    height: 100vh;
 }
 
 .questionContainer1 {
@@ -107,7 +108,6 @@
     font-size: 25px;
     margin-bottom: 1vh;
 }
-
 
 
 .questionContainer3{
