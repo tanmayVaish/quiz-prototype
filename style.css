@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.terms {
+    padding: 4vmin;
+    width: 100%;
+    min-width: 80vw;
+}
+
+.heading {
+    font-size: 10vmin;
+    font-weight: 800;
+    margin-bottom: 2vmin;
+    color: rgb(99, 180, 252);
+    display: flex;
+    justify-content: center;
+}
+
+.para {
+    color: grey;
+    margin-bottom: 2vmin;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vmin;
+}
+
+.label {
+    color: rgb(99, 180, 252);
+    font-weight: 600;
+    font-size: 4vmin;
+}
+
+.input {
+    border-radius: 3vmin;
+    height: 8vmin;
+    outline: none;
+    padding: 1vmin;
+    font-size: 2vmin;
+    margin-bottom: 2vh;
+}
+
+.buttons {
+    margin-top: 3vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    padding: 1.5vmin;
+    border-radius: 4vmin;
+    background-color: rgb(99, 180, 252);
+    width: 20vmin;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    user-select: none;
+    cursor: pointer;
+}
+
+/*question card*/
+/*question card*/
+
+.questions {
+    display: grid;
+    place-content: center;
+    top: 25vh;
+    left: 25vw;
+    border: 1px black solid;
+    padding: 5vmin;
+    background: rgb(249, 249, 249);
+}
+
+.questionContainer1 {
+    display: flex;
+    justify-content: end;
+}
+
+.timer{
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(99, 180, 252);
+}
+
+.buttonSubmit{
+    border: 1px solid grey;
+    border-radius: 5vmin;
+    text-align: center;
+    padding: 1vmin;
+    display: flex;
+    align-items: center;
+    color: grey;
+    user-select: none;
+    cursor: pointer;
+}
+
+.questionContainer2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-bottom: 1vh;
+}
+
+
+
+.questionContainer3{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vmin;
+}
+
+.number{
+    font-size: 30px;
+}
+
+.text{
+    padding: 1vmin;
+    color: grey;
+    border: grey 1px solid;
+    border-radius: 5vmin;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.questionContainer4 {
+    padding: 5vmin;
+    border-radius: 6vmin;
+    background: white;
+}
+
+.question {
+    margin-bottom: 2vh;
+    font-size: 31px;
+}
+
+.option {
+    margin-bottom: 1vh;
+    border: 1px solid black;
+    border-radius: 5vmin;
+    padding: 3vmin;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.buttonAttempt{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+.buttonAttemptContent{
+    border: 1px solid grey;
+    border-radius: 5vmin;
+    text-align: center;
+    padding: 2vmin;
+    color: grey;
+    user-select: none;
+    cursor: pointer;
+}
+
+/*question card*/
+/*question card*/
