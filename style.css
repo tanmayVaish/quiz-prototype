@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-
-
-
-
 .blur{
     filter: blur(8px);
     -webkit-filter: blur(8px);
@@ -72,13 +68,18 @@
     cursor: pointer;
 }
 
+.progress{
+    margin-left: 100px;
+    width:700px;
+    height:20px;
+}
+
 /*question card*/
 /*question card*/
 
 .questions {
     top: 25vh;
     left: 25vw;
-    border: 1px black solid;
     padding: 5vmin;
     background: rgb(249, 249, 249);
     height: 100vh;
@@ -292,7 +293,6 @@
     /*question card*/
 
     .questions {
-        border: 1px black solid;
         padding: 2vmin;
         height: 100%;
         color: #494949;
@@ -414,5 +414,11 @@
 
     /*question card*/
     /*question card*/
+
+    .progress{
+        margin-left: 90px;
+        width: 1700px;
+        height: 20px;
+    }
 
 }
