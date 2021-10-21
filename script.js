@@ -7,17 +7,7 @@ const overlay = document.querySelectorAll('.overlay');
 const attempt = document.querySelectorAll('.buttonAttempt');
 
 let prev = null;
-
-next.addEventListener('click', () => {
-  question1.style.display = 'block';
-  terms.style.display = 'none';
-})
-
-submit[0].addEventListener('click', () => {
-  question1.style.display = 'none';
-  question2.style.display = 'block';
-})
-
+let i=0;
 
 function timer(){
   if (prev !== null)
@@ -26,13 +16,23 @@ function timer(){
   prev = overlay[i];
   if(++i<overlay.length){
     setTimeout(timer, 1000);
+  } else{
+    prev.style.display = 'none';
+    question1.classList.remove('blur');
   }
 }
 
-let i=0;
-submit[1].addEventListener('click', () => {
-  question2.classList.add('blur');
+next.addEventListener('click', () => {
+  question1.style.display = 'block';
+  question1.classList.add('blur');
+  terms.style.display = 'none';
   timer();
+})
+
+
+submit[0].addEventListener('click', () => {
+  question1.style.display = 'none';
+  question2.style.display = 'block';
 })
 
 
@@ -40,9 +40,3 @@ attempt[0].addEventListener('click', () => {
   question1.style.display = 'none';
   question2.style.display = 'block';
 })
-
-attempt[1].addEventListener('click', () => {
-  question2.classList.add('blur');
-  timer();
-})
-
