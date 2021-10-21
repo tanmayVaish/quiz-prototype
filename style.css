@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
 }
 
 .terms {
@@ -69,32 +72,40 @@
 /*question card*/
 
 .questions {
-    display: grid;
-    place-content: center;
     top: 25vh;
     left: 25vw;
     border: 1px black solid;
     padding: 5vmin;
     background: rgb(249, 249, 249);
-    height: 100vh;
+    height: 100%;
+    color: #494949;
 }
 
 .questionContainer1 {
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
 }
 
-.timer{
+.timer {
     font-weight: bolder;
-    font-size: 30px;
-    color: rgb(99, 180, 252);
+    font-size: 65px;
+    color: #63B4FC;
 }
 
-.buttonSubmit{
+.buttonSubmit {
+    font-size: 30px;
+
+    position: absolute;
+    right: 80px;
+
     border: 1px solid grey;
     border-radius: 5vmin;
     text-align: center;
-    padding: 1vmin;
+    padding: 10px;
+
     display: flex;
     align-items: center;
     color: grey;
@@ -102,70 +113,86 @@
     cursor: pointer;
 }
 
-.questionContainer2{
+.questionContainer2 {
     display: flex;
     justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+}
+
+.content1{
+    color: grey;
     font-size: 25px;
-    margin-bottom: 1vh;
+}
+.content1 span{
+    font-weight: bold;
+    color: #494949;
+    font-size: 45px;
 }
 
-
-.questionContainer3{
+.questionContainer3 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2vmin;
+    margin-bottom: 20px;
 }
 
-.number{
-    font-size: 30px;
+.number {
+    font-size: 45px;
 }
 
-.text{
-    padding: 1vmin;
+.text {
+    padding: 10px 20px 10px 20px;
     color: grey;
     border: grey 1px solid;
-    border-radius: 5vmin;
+    border-radius: 25px;
     text-align: center;
     display: flex;
     align-items: center;
     user-select: none;
     cursor: pointer;
+    font-size: 25px;
 }
 
 .questionContainer4 {
-    padding: 5vmin;
-    border-radius: 6vmin;
+    margin: 70px;
+    padding: 60px;
+    border-radius: 45px;
     background: white;
+    box-shadow: 0 0 50px 0 ghostwhite;
+    font-weight: bold;
 }
 
 .question {
     margin-bottom: 2vh;
-    font-size: 31px;
+    font-size: 45px;
 }
 
 .option {
-    margin-bottom: 1vh;
+    margin-bottom: 40px;
     border: 1px solid black;
-    border-radius: 5vmin;
-    padding: 3vmin;
-    font-size: 20px;
+    border-radius: 50px;
+    padding: 30px;
+    font-size: 30px;
     cursor: pointer;
     user-select: none;
 }
 
-.buttonAttempt{
+.buttonAttempt {
     display: flex;
     justify-content: center;
-    margin-top: 2vh;
+    margin-top: 80px;
 }
-.buttonAttemptContent{
+
+.buttonAttemptContent {
     border: 1px solid grey;
-    border-radius: 5vmin;
+    border-radius: 50px;
     text-align: center;
-    padding: 2vmin;
-    color: grey;
+    padding: 30px 70px 30px 70px;
     user-select: none;
     cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 /*question card*/
