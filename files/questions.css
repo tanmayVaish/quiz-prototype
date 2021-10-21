@@ -16,9 +16,6 @@
     background: rgb(249, 249, 249);
     height: 100vh;
     color: #494949;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-
 }
 
 .questionContainer1 {
