@@ -4,6 +4,7 @@ const question2 = document.querySelector('#two');
 const submit = document.querySelectorAll('.buttonSubmit');
 const terms = document.querySelector('.terms');
 const overlay = document.querySelectorAll('.overlay');
+const attempt = document.querySelectorAll('.buttonAttempt');
 
 let prev = null;
 
@@ -33,3 +34,15 @@ submit[1].addEventListener('click', () => {
   question2.classList.add('blur');
   timer();
 })
+
+
+attempt[0].addEventListener('click', () => {
+  question1.style.display = 'none';
+  question2.style.display = 'block';
+})
+
+attempt[1].addEventListener('click', () => {
+  question2.classList.add('blur');
+  timer();
+})
+
